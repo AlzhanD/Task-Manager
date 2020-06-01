@@ -9,15 +9,15 @@ const CategoryList = (props) => {
     <div>
       <ul>
         {props.categories.map((el) => (
-          <li key={el} className="mb-4 mt-4 shadow-xl">
+          <li key={el} className="mb-4 mt-4 shadow-xl flex flex-row justify-between">
+            <Link to={`/${el}`}>{el}</Link>
             <button
               type="button"
-              className="btnClass mx-2 mr-10 font-serif transition duration-500 ease-in-out hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-1 px-1 rounded"
+              className="btnClass  font-serif transition duration-500 ease-in-out hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-1 px-1 rounded"
               onClick={() => props.deleteCategory(el)}
             >
               Delete
             </button>
-            <Link to={`/${el}`}>{el}</Link>
           </li>
         ))}
       </ul>

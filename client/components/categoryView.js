@@ -14,7 +14,7 @@ const CategoryView = (props) => {
       <ReactShadowScroll>
         <ul className="flex flex-col px-3 ... rounded-lg shadow-xl">
           <FlipMove
-            staggerDelayBy={300}
+            staggerDelayBy={100}
             appearAnimation="fade"
             enterAnimation="fade"
             leaveAnimation="fade"

@@ -124,7 +124,7 @@
   {
     "taskId": "frq4QQq9j",
     "title": "test3",
-    "status": "in progress",
+    "status": "blocked",
     "_isDeleted": false,
     "_createdAt": 1590952036772,
     "_deletedAt": null
@@ -140,7 +140,7 @@
   {
     "taskId": "5YisR3cTI",
     "title": "test6",
-    "status": "in progress",
+    "status": "blocked",
     "_isDeleted": false,
     "_createdAt": 1590952042537,
     "_deletedAt": null
@@ -156,7 +156,7 @@
   {
     "taskId": "yxHJudZwY",
     "title": "AlzhanD",
-    "status": "in progress",
+    "status": "blocked",
     "_isDeleted": false,
     "_createdAt": 1590952375681,
     "_deletedAt": null
