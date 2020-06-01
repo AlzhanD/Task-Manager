@@ -32,6 +32,8 @@ const Home = () => {
   }
   const deleteCategory = (name) => {
     axios.delete(`/api/v1/tasks/${name}`)
+    const updatedCategoryList = categories.map((el) => el)
+    setNewCategory(updatedCategoryList)
     console.log('deleteCategory')
   }
   const taskDelete = (id) => {

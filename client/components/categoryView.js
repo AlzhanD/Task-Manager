@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import FlipMove from 'react-flip-move'
 import ReactShadowScroll from 'react-shadow-scroll'
 import TaskItem from './taskItem'
@@ -7,11 +7,7 @@ import './main.scss'
 import SortTasks from './sortTask'
 
 const CategoryView = (props) => {
-  const { category } = useParams()
   const [newTasks, setNewTasks] = useState('')
-  const deleteCategory = () => {
-    props.deleteCategory(category)
-  }
   return (
     <div className="categoryView relative">
       <SortTasks category={props.category} />
@@ -58,7 +54,7 @@ const CategoryView = (props) => {
         />
         <button
           type="button"
-          className="btnClass mx-2 font-serif text-lg transition duration-500 ease-in-out hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-1 px-1 rounded-full"
+          className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
           onClick={() => props.addTasks(newTasks)}
         >
           Add
@@ -66,18 +62,11 @@ const CategoryView = (props) => {
         <Link to="/">
           <button
             type="button"
-            className="btnClass font-serif text-lg mx-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-2 px-4 rounded-full"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
           >
             Back
           </button>
         </Link>
-        <button
-          type="button"
-          className="btnClass mx-2 font-serif text-lg transition duration-500 ease-in-out hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-1 px-1 rounded-full"
-          onClick={deleteCategory}
-        >
-          delete
-        </button>
       </div>
       {props.alert && <div className="titlee">{props.alert}</div>}
     </div>

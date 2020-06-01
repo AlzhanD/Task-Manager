@@ -17,7 +17,7 @@ const TaskItem = (props) => {
         <div className="taskItem">
           <button
             type="button"
-            className="btnClass font-serif text-lg mr-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-2 px-4 rounded-full"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
             onClick={editTitle}
           >
             Save
@@ -26,14 +26,14 @@ const TaskItem = (props) => {
             type="text"
             value={value}
             onChange={(e) => setValue(e.target.value)}
-            className="text-black w-2/3 bg-red-200 placeholder-blue-500 focus:outline-none focus:shadow-outline border border-gray-300 py-1 px-1 rounded-full appearance-none leading-normal"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
           />
         </div>
       ) : (
         <div className="taskItem">
           <button
             type="button"
-            className="btnClass font-serif text-lg mr-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-2 px-4 rounded-full"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
             onClick={() => setEditingMode(true)}
           >
             Edit
@@ -45,7 +45,7 @@ const TaskItem = (props) => {
         {props.status === 'new' ? (
           <button
             type="button"
-            className="btnClass font-serif text-lg mr-10 ml-10 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-000 text-black font-bold py-2 px-4 rounded-full"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
             onClick={() => props.updateStatus('in progress', props.taskId)}
           >
             In progress
@@ -57,14 +57,14 @@ const TaskItem = (props) => {
           <div className="flex">
             <button
               type="button"
-              className="btnClass font-serif text-lg mr-5 ml-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ...  hover:bg-green-400 text-black font-bold py-2 px-4 rounded-full"
+              className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
               onClick={() => props.updateStatus('blocked', props.taskId)}
             >
               Back
             </button>
             <button
               type="button"
-              className="btnClass font-serif text-lg mr-5 ml-5 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 ... hover:bg-orange-600 text-black font-bold py-2 px-4 rounded-full"
+              className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
               onClick={() => props.updateStatus('done', props.taskId)}
             >
               Done
@@ -77,7 +77,7 @@ const TaskItem = (props) => {
           <div>
             <button
               type="button"
-              className="btnClass font-serif text-lg mr-5 ml-5 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 ... hover:bg-green-400 text-black font-bold py-2 px-4 rounded-full"
+              className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
               onClick={() => props.updateStatus('in progress', props.taskId)}
             >
               Block
@@ -91,14 +91,14 @@ const TaskItem = (props) => {
         <div>
           <button
             type="button"
-            className="btnClass font-serif text-lg mr-5 ml-5 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 ... hover:bg-green-400 text-black font-bold py-2 px-4 rounded-full"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
             onClick={() => props.updateStatus('blocked', props.taskId)}
           >
             Cancel
           </button>
           <button
             type="button"
-            className="btnClass font-serif text-lg mr-5 ml-5 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 ... hover:bg-red-600 text-black font-bold py-2 px-4 rounded-full"
+            className="btnClass mx-2 font-serif bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded"
             onClick={deleteTask}
           >
             Delete
