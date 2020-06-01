@@ -70,10 +70,10 @@
   {
     "taskId": "4dG-5bNgS",
     "title": "Elvis",
-    "status": "blocked",
-    "_isDeleted": false,
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590517047562,
-    "_deletedAt": null
+    "_deletedAt": 1591042215198
   },
   {
     "taskId": "KA8T_jbD9",
@@ -115,16 +115,16 @@
   },
   {
     "taskId": "3JBDHQVOa",
-    "title": "test2",
-    "status": "blocked",
-    "_isDeleted": false,
+    "title": "test778",
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590952033600,
-    "_deletedAt": null
+    "_deletedAt": 1591035117160
   },
   {
     "taskId": "frq4QQq9j",
     "title": "test3",
-    "status": "blocked",
+    "status": "in progress",
     "_isDeleted": false,
     "_createdAt": 1590952036772,
     "_deletedAt": null
@@ -140,7 +140,7 @@
   {
     "taskId": "5YisR3cTI",
     "title": "test6",
-    "status": "blocked",
+    "status": "in progress",
     "_isDeleted": false,
     "_createdAt": 1590952042537,
     "_deletedAt": null
@@ -156,7 +156,7 @@
   {
     "taskId": "yxHJudZwY",
     "title": "AlzhanD",
-    "status": "blocked",
+    "status": "in progress",
     "_isDeleted": false,
     "_createdAt": 1590952375681,
     "_deletedAt": null
@@ -231,6 +231,30 @@
     "status": "blocked",
     "_isDeleted": false,
     "_createdAt": 1590953954482,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "hX2RP_kSo",
+    "title": "sdfg",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1591032049484,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "IlOI275Md",
+    "title": "s",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1591032440938,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "zGpoo-W4n",
+    "title": "asdasd",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1591032444053,
     "_deletedAt": null
   }
 ]

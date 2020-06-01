@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const SortTasks = (props) => {
   return (
-    <div className="days mx-6 font-serif text-2xl font-mono text-teal-900 text-center absolute">
+    <div className="days mx-6 font-serif text-2xl font-mono text-teal-900 text-center">
       <span className="mr-4	text-purple-900 shadow-lg">
         <Link to={`/${props.category}/day`}>Day</Link>
       </span>

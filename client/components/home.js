@@ -15,29 +15,37 @@ const Home = () => {
   const addCategory = (categoryName) => {
     axios.post(`/api/v1/tasks/${categoryName}`)
     setNewCategory(categoryName)
+    console.log('addCategory')
   }
   const updateStatus = (status, id) => {
     axios.patch(`/api/v1/tasks/${category}/${id}`, { status })
     const updateTasks = taskList.map((el) => (el.taskId === id ? { ...el, status } : el))
     setTaskList(updateTasks)
+    console.log('updateStatus')
   }
 
   const taskNameUpdate = (title, status, id) => {
     axios.patch(`/api/v1/tasks/${category}/${id}`, { title, status })
     const updateTasksName = taskList.map((el) => (el.taskId === id ? { ...el, title, status } : el))
     setTaskList(updateTasksName)
+    console.log('taskNameUpdate')
   }
-
+  const deleteCategory = (name) => {
+    axios.delete(`/api/v1/tasks/${name}`)
+    console.log('deleteCategory')
+  }
   const taskDelete = (id) => {
     axios.delete(`/api/v1/tasks/${category}/${id}`)
     const deleteTask = taskList.filter((el) => el.taskId !== id)
     setTaskList(deleteTask)
+    console.log('taskDelete')
   }
   const alertMessage = (message) => {
     setAlert(message)
     setTimeout(() => {
       setAlert('')
     }, 3000)
+    console.log('alertMessage')
   }
   const addTasks = (tasksName) => {
     if (tasksName) {
@@ -47,22 +55,26 @@ const Home = () => {
     } else {
       alertMessage('Enter Task name!')
     }
+    console.log('addTasks')
   }
 
   useEffect(() => {
     axios('/api/v1/tasks/').then(({ data }) => setCategories(data))
+    console.log('1')
   }, [newCategory])
 
   useEffect(() => {
     if (typeof category !== 'undefined') {
       axios(`/api/v1/tasks/${category}`).then(({ data }) => setTaskList(data))
     }
+    console.log('2')
   }, [category])
 
   useEffect(() => {
     if (typeof sort !== 'undefined') {
       axios(`/api/v1/tasks/${category}/${sort}`).then(({ data }) => setTaskList(data))
     }
+    console.log('3')
   }, [sort, category])
   return (
     <div>
@@ -71,7 +83,13 @@ const Home = () => {
           <Route
             exact
             path="/"
-            component={() => <CategoryList categories={categories} addCategory={addCategory} />}
+            component={() => (
+              <CategoryList
+                categories={categories}
+                addCategory={addCategory}
+                deleteCategory={deleteCategory}
+              />
+            )}
           />
           <Route
             exact
@@ -85,6 +103,7 @@ const Home = () => {
                 taskNameUpdate={taskNameUpdate}
                 taskDelete={taskDelete}
                 alert={alert}
+                deleteCategory={deleteCategory}
               />
             )}
           />

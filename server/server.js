@@ -10,7 +10,7 @@ import Html from '../client/html'
 
 const { readdirSync } = require('fs')
 
-const { readFile, writeFile } = require('fs').promises
+const { readFile, writeFile, unlink } = require('fs').promises
 
 const port = process.env.PORT || 3000
 const server = express()
@@ -115,6 +115,12 @@ server.delete('/api/v1/tasks/:category/:id', async (req, res) => {
     el.taskId === id ? { ...el, _isDeleted: true, _deletedAt: +new Date() } : el
   )
   await wrFile(category, deletedTask)
+  res.json({ status: 'delete success' })
+}) // delete tasks
+
+server.delete('/api/v1/tasks/:category/', async (req, res) => {
+  const { category } = req.params
+  unlink(`${__dirname}/tasks/${category}.json`)
   res.json({ status: 'delete success' })
 }) // delete file
 

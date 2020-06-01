@@ -85,6 +85,7 @@ export default (props) => {
             <Route exact path="/" component={() => <Home />} />
             <Route exact path="/:category" component={() => <Home />} />
             <Route exact path="/:category/:sort" component={() => <Home />} />
+            <Route exact path="/:category/:sort/:example" component={() => <Home />} />
             <PrivateRouteConnected exact path="/hidden-route" component={() => <DummyView />} />
             <Route component={() => <NotFound />} />
           </Switch>

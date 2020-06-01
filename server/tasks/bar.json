@@ -90,18 +90,18 @@
   {
     "taskId": "3jFrXe46N",
     "title": "AlzhanD",
-    "status": "blocked",
-    "_isDeleted": false,
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590704229942,
-    "_deletedAt": null
+    "_deletedAt": 1590983428015
   },
   {
     "taskId": "ue63kTwrm",
     "title": "AlzhanD",
-    "status": "blocked",
-    "_isDeleted": false,
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590947063092,
-    "_deletedAt": null
+    "_deletedAt": 1590983431583
   },
   {
     "taskId": "3pmPOLxEf",
@@ -130,18 +130,18 @@
   {
     "taskId": "_QrLS24SY",
     "title": "test3",
-    "status": "blocked",
-    "_isDeleted": false,
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590948063082,
-    "_deletedAt": null
+    "_deletedAt": 1591042045270
   },
   {
     "taskId": "Tjhu78ARe",
     "title": "test5",
-    "status": "blocked",
-    "_isDeleted": false,
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590948064334,
-    "_deletedAt": null
+    "_deletedAt": 1591042047199
   },
   {
     "taskId": "JA65Hlisv",
@@ -170,10 +170,10 @@
   {
     "taskId": "_RNMd44a0",
     "title": "ASDFGHN",
-    "status": "blocked",
-    "_isDeleted": false,
+    "status": "done",
+    "_isDeleted": true,
     "_createdAt": 1590948873373,
-    "_deletedAt": null
+    "_deletedAt": 1590983435303
   },
   {
     "taskId": "kf4Q6XxlH",
@@ -218,9 +218,81 @@
   {
     "taskId": "81Tx3EQ9T",
     "title": "Astana",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1590965176210,
+    "_deletedAt": 1591030890994
+  },
+  {
+    "taskId": "Ta0ryjK8K",
+    "title": "Astana",
+    "status": "blocked",
+    "_isDeleted": false,
+    "_createdAt": 1591030448947,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "GU5viCFK8",
+    "title": "Astana",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1591030450930,
+    "_deletedAt": 1591030894091
+  },
+  {
+    "taskId": "HUpVr5o5B",
+    "title": "Astana",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1591030452935,
+    "_deletedAt": 1591030894708
+  },
+  {
+    "taskId": "OYeyeWr1y",
+    "title": "samartsevigor",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1591030457071,
+    "_deletedAt": 1591030897259
+  },
+  {
+    "taskId": "-lcA7KySy",
+    "title": "twbs",
+    "status": "blocked",
+    "_isDeleted": false,
+    "_createdAt": 1591030459124,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "8tWtaad-K",
+    "title": "twbs",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1591030461416,
+    "_deletedAt": 1591030889021
+  },
+  {
+    "taskId": "UzDMIo80V",
+    "title": "twbs",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1591030766646,
+    "_deletedAt": 1591030900073
+  },
+  {
+    "taskId": "Cd_PrDg2j",
+    "title": "samartsevigor",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1591030770167,
+    "_deletedAt": 1591030877293
+  },
+  {
+    "taskId": "M9S_QY_-C",
+    "title": "Astana",
     "status": "new",
     "_isDeleted": false,
-    "_createdAt": 1590965176210,
+    "_createdAt": 1591042054685,
     "_deletedAt": null
   }
 ]
