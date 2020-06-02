@@ -236,7 +236,7 @@
   {
     "taskId": "hX2RP_kSo",
     "title": "sdfg",
-    "status": "new",
+    "status": "blocked",
     "_isDeleted": false,
     "_createdAt": 1591032049484,
     "_deletedAt": null
@@ -244,7 +244,7 @@
   {
     "taskId": "IlOI275Md",
     "title": "s",
-    "status": "new",
+    "status": "blocked",
     "_isDeleted": false,
     "_createdAt": 1591032440938,
     "_deletedAt": null

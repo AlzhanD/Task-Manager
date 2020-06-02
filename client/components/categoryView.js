@@ -47,10 +47,10 @@ const CategoryView = (props) => {
           }}
           type="text"
           id="input-field"
-          className="text-black bg-red-200 placeholder-blue-500 focus:outline-none focus:shadow-outline border border-gray-300 py-1 px-1 rounded-full appearance-none leading-normal"
+          className="text-black text-center bg-red-200 placeholder-blue-500 focus:outline-none focus:shadow-outline border border-gray-300 py-1 px-1 rounded-full appearance-none leading-normal"
           onChange={(e) => setNewTasks(e.target.value)}
           value={newTasks}
-          placeholder="type"
+          placeholder="add new task"
         />
         <button
           type="button"
