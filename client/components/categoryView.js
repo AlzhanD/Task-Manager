@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import FlipMove from 'react-flip-move'
 import ReactShadowScroll from 'react-shadow-scroll'
 import TaskItem from './taskItem'
 import './main.scss'
@@ -13,28 +12,21 @@ const CategoryView = (props) => {
       <SortTasks category={props.category} />
       <ReactShadowScroll>
         <ul className="flex flex-col px-3 ... rounded-lg shadow-xl">
-          <FlipMove
-            staggerDelayBy={100}
-            appearAnimation="fade"
-            enterAnimation="fade"
-            leaveAnimation="fade"
-          >
-            {props.taskList.map((el) => (
-              <li
-                key={el.taskId}
-                className="my-3 ml-5  order-last font-serif text-xl text-blue-1000 shadow-lg"
-              >
-                <TaskItem
-                  title={el.title}
-                  status={el.status}
-                  taskId={el.taskId}
-                  updateStatus={props.updateStatus}
-                  taskNameUpdate={props.taskNameUpdate}
-                  taskDelete={props.taskDelete}
-                />
-              </li>
-            ))}
-          </FlipMove>
+          {props.taskList.map((el) => (
+            <li
+              key={el.taskId}
+              className="my-3 ml-5  order-last font-serif text-xl text-blue-1000 shadow-lg"
+            >
+              <TaskItem
+                title={el.title}
+                status={el.status}
+                taskId={el.taskId}
+                updateStatus={props.updateStatus}
+                taskNameUpdate={props.taskNameUpdate}
+                taskDelete={props.taskDelete}
+              />
+            </li>
+          ))}
         </ul>
       </ReactShadowScroll>
 
